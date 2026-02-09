@@ -3,7 +3,7 @@
 import { useRouter } from "vue-router"
 import { computed } from "vue"
 import { useAuthStore } from "../stores/auth"
-
+import logo from "../assets/logoSI.jpg"
 const router = useRouter()
 const auth = useAuthStore()
 
@@ -28,9 +28,9 @@ const roleLabel = computed(() => {
   <div class="layout">
     <aside class="sidebar">
       <div class="logo">
-        <span class="logo-mark">TF</span>
+        <img :src="logo" alt="Logo empresa" class="logo-img" />
         <div class="logo-text">
-          <h1>TraceFlow</h1>
+          <h1>Sanchia International</h1>
           <p>Control de flujo productivo</p>
         </div>
       </div>
@@ -121,6 +121,12 @@ const roleLabel = computed(() => {
   justify-content: center;
   font-weight: 700;
   color: white;
+}
+
+.logo-img {
+  width: 60px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .logo-text h1 {
