@@ -32,7 +32,7 @@ const submit = async () => {
 
 <template>
   <div style="max-width:350px;margin:100px auto">
-    <h2>TraceFlow Login</h2>
+    <h2>Sanchia International. Login</h2>
 
     <form @submit.prevent="submit">
       <input v-model="username" placeholder="Usuario" />
